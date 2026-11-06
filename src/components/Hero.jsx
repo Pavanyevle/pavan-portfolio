@@ -52,23 +52,7 @@ export default function Hero() {
             animate="visible"
             className="order-2 lg:order-1"
           >
-            {/* Available badge */}
-            <motion.div variants={itemVariants} className="flex items-center gap-2 mb-6">
-              <span
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium border"
-                style={{
-                  background: 'rgba(16, 185, 129, 0.1)',
-                  borderColor: 'rgba(16, 185, 129, 0.3)',
-                  color: '#059669'
-                }}
-              >
-                <span
-                  className="w-2 h-2 rounded-full animate-pulse"
-                  style={{ background: '#10b981' }}
-                />
-                Available for opportunities
-              </span>
-            </motion.div>
+            
 
             {/* Main heading */}
             <motion.div variants={itemVariants}>

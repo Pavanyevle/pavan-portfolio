@@ -2,61 +2,64 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ExternalLink, ArrowRight } from 'lucide-react'
 import { GithubIcon } from './Icons'
-import workwiseImg from '../assets/project-workwise.jpg'
+import fastfoodImg from '../assets/fastfood.png'
 import connectImg from '../assets/project-connect.jpg'
-import roboticDogImg from '../assets/project-robotic-dog.jpg'
+import schoolImg from '../assets/school.png'
 
 const projects = [
   {
     id: 1,
-    title: 'WorkWise',
-    category: 'Mobile App',
+    title: 'School Management System',
+    category: 'Management System',
     description:
-      'A comprehensive productivity and work management application built with React Native. Features task tracking, project management, calendar integration, deadline reminders, and team collaboration tools — all in a clean, intuitive interface.',
+      'A School Management System designed to simplify and manage daily school operations. It helps organize student information, academic records, and administrative activities through a centralized platform.',
     longDesc:
-      'WorkWise empowers professionals to manage their workflow effortlessly. It supports task categorization, priority setting, real-time progress tracking, and push notifications for deadlines.',
-    image: workwiseImg,
-    tags: ['React Native', 'Firebase', 'JavaScript', 'Figma'],
+      'This project focuses on making school administration easier by providing a digital platform to manage school-related information and improve overall workflow.',
+    image: schoolImg,
+    tags: ['React Native', 'JavaScript', 'Firebase', 'Management System'],
     color: '#6366f1',
-    bgGradient: 'linear-gradient(135deg, rgba(99,102,241,0.1), rgba(139,92,246,0.05))',
-    github: 'https://github.com/pavanyevle/workwise',
+    bgGradient:
+      'linear-gradient(135deg, rgba(99,102,241,0.1), rgba(139,92,246,0.05))',
+    github: 'https://github.com/Pavanyevle/IPS',
     demo: null,
     featured: true,
-    emoji: '📋'
+    emoji: '🏫'
   },
   {
     id: 2,
-    title: 'Connect',
-    category: 'Full Stack App',
+    title: 'FastFood',
+    category: 'Food Ordering App',
     description:
-      'A real-time messaging application with Firebase authentication and Socket.IO. Features include one-on-one and group chats, online presence indicators, message read receipts, media sharing, and secure user authentication.',
+      'A food ordering application that allows customers to explore food items, add products to their cart, and place orders conveniently. Designed with a simple interface and Cash on Delivery functionality.',
     longDesc:
-      'Connect delivers a seamless chat experience with real-time message delivery, typing indicators, and an elegant dark-themed UI inspired by modern messaging platforms.',
-    image: connectImg,
-    tags: ['React Native', 'Socket.IO', 'Firebase', 'Node.js', 'Express.js'],
-    color: '#0ea5e9',
-    bgGradient: 'linear-gradient(135deg, rgba(14,165,233,0.1), rgba(99,102,241,0.05))',
-    github: 'https://github.com/pavanyevle/connect',
+      'FastFood provides a convenient food ordering experience with menu browsing, cart management, order placement, and delivery charge and tax calculations.',
+    image: fastfoodImg,
+    tags: ['React Native', 'Firebase Realtime Database', 'JavaScript', 'Android'],
+    color: '#f97316',
+    bgGradient:
+      'linear-gradient(135deg, rgba(249,115,22,0.1), rgba(234,88,12,0.05))',
+    github: 'https://github.com/Pavanyevle/FastFood',
     demo: null,
     featured: true,
-    emoji: '💬'
+    emoji: '🍔'
   },
   {
     id: 3,
-    title: 'Robotic Dog',
-    category: 'Robotics / IoT',
+    title: 'Connect',
+    category: 'Real-Time Chat App',
     description:
-      'An ESP32-based quadruped robot that mimics dog locomotion. Controlled via Bluetooth using a custom mobile app. Features servo-driven leg movement, gait algorithms, real-time wireless control, and obstacle sensing.',
+      'A real-time messaging application built with React Native and Node.js. It focuses on instant communication, user authentication, and real-time message delivery using Socket.IO.',
     longDesc:
-      'This project demonstrates the intersection of hardware and software — integrating ESP32 microcontrollers, 12 servo motors, and a custom-built Bluetooth mobile control app for fluid quadruped movement.',
-    image: roboticDogImg,
-    tags: ['ESP32', 'C/C++', 'Bluetooth', 'React Native', 'IoT'],
-    color: '#10b981',
-    bgGradient: 'linear-gradient(135deg, rgba(16,185,129,0.1), rgba(14,165,233,0.05))',
-    github: 'https://github.com/pavanyevle/robotic-dog',
+      'Connect aims to deliver a seamless messaging experience with real-time chat, user registration, OTP-based authentication, JWT security, and Socket.IO integration.',
+    image: connectImg,
+    tags: ['React Native', 'Node.js', 'Express.js', 'Socket.IO', 'MongoDB'],
+    color: '#0ea5e9',
+    bgGradient:
+      'linear-gradient(135deg, rgba(14,165,233,0.1), rgba(99,102,241,0.05))',
+    github: 'https://github.com/Pavanyevle/Connect',
     demo: null,
-    featured: false,
-    emoji: '🤖'
+    featured: true,
+    emoji: '💬'
   }
 ]
 

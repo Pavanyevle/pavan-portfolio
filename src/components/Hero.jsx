@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Download, ArrowRight, Briefcase, Sparkles } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from './Icons'
-import profileImg from '../assets/profile.JPEG'
+import profileImg from '../assets/profile.jpeg'
 
 const containerVariants = {
   hidden: { opacity: 0 },
